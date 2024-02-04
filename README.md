@@ -4,11 +4,11 @@
 
 | CRUD   | Response              | Explain                 | Method | Send in Body | URL                  | Query Params    |
 |--------|-----------------------|------------------------|--------|--------------|----------------------|------------------|
-| Create | New Cake object       | Add a new cake to the system | POST   | JSON Object (see below) | /api/cakes           | N/A              |
-| Read   | List of Cakes         | Retrieve a list of all cakes | GET    | N/A          | /api/cakes           | Optional: `page`, `perPage`, `search` |
-| Read   | Single Cake by ID     | Retrieve details of a specific cake | GET    | N/A          | /api/cakes/:id       | N/A              |
-| Update | Updated Cake object   | Update an existing cake | PUT    | JSON Object (see below) | /api/cakes/:id       | N/A              |
-| Delete | Deleted Cake object   | Delete a cake from the system | DELETE | N/A          | /api/cakes/:id       | N/A              |
+| Create | New Cake object       | Add a new cake to the system | POST   | JSON Object (see below) | /api/cakes           | ---              |
+| Read   | List of Cakes         | Retrieve a list of all cakes | GET    |    ---          | /api/cakes           | Optional: `page`, `perPage`, `search` |
+| Read   | Single Cake by ID     | Retrieve details of a specific cake | GET    | ---         | /api/cakes/:id       | ---              |
+| Update | Updated Cake object   | Update an existing cake | PUT    | JSON Object (see below) | /api/cakes/:id       | ---              |
+| Delete | Deleted Cake object   | Delete a cake from the system | DELETE | ---          | /api/cakes/:id       | ---              |
 <br/>
 
 ## Functions
@@ -57,9 +57,9 @@ Delete a cake from the system.
 
 | CRUD   | Response                          | Explain                                     | Method | Send in Body                          | URL              | Query Params    |
 |--------|-----------------------------------|---------------------------------------------|--------|----------------------------------------|------------------|------------------|
-| Create | Token and User Info               | Add a new user to the system                | POST   | JSON Object (see below)                | /api/users       | N/A              |
-| Login  | Token and User Info               | Authenticate and get a token for the user  | POST   | JSON Object (see below)                | /api/users/login | N/A              |
-| Read   | List of Users (Excluding Password)| Retrieve a list of all users                | GET    | N/A                                    | /api/users       | N/A              |
+| Create | Token and User Info               | Add a new user to the system                | POST   | JSON Object (see below)                | /api/users       | ---              |
+| Login  | Token and User Info               | Authenticate and get a token for the user  | POST   | JSON Object (see below)                | /api/users/login | ---              |
+| Read   | List of Users (Excluding Password)| Retrieve a list of all users                | GET    | ---                                    | /api/users       | ---              |
 
 <br/>
 
@@ -106,11 +106,11 @@ Passwords should follow a pattern of at least 8 characters, including at least o
 
 | CRUD   | Response                  | Explain                                       | Method | Send in Body                          | URL                       | Query Params    |
 |--------|---------------------------|-----------------------------------------------|--------|----------------------------------------|---------------------------|------------------|
-| Read   | List of All Orders        | Retrieve a list of all orders                 | GET    | N/A                                    | /api/orders               | N/A              |
-| Read   | Orders by User            | Retrieve orders for a specific user            | GET    | N/A                                    | /api/orders/byUser        | N/A              |
-| Create | New Order                 | Add a new order to the system                  | POST   | JSON Object (see below)                | /api/orders               | N/A              |
-| Update | Update Order Status       | Update the status of an existing order         | PUT    | N/A                                    | /api/orders/:id           | N/A              |
-| Delete | Deleted Order              | Delete an order from the system                | DELETE | N/A                                    | /api/orders/:id           | N/A              |
+| Read   | List of All Orders        | Retrieve a list of all orders                 | GET    | ---                                    | /api/orders               | ---              |
+| Read   | Orders by User            | Retrieve orders for a specific user            | GET    | ---                                    | /api/orders/byUser        | ---              |
+| Create | New Order                 | Add a new order to the system                  | POST   | JSON Object (see below)                | /api/orders               | ---              |
+| Update | Update Order Status       | Update the status of an existing order         | PUT    | ---                                    | /api/orders/:id           | ---              |
+| Delete | Deleted Order              | Delete an order from the system                | DELETE | ---                                    | /api/orders/:id           | ---              |
 <br/>
 
 ## Functions
